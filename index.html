@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survival SMP Servers</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            padding: 20px;
+            min-height: 200vh;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: left;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+        }
+
+        header img {
+            width: 30px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .server {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .server h2 {
+            color: #333;
+        }
+
+        .server p {
+            color: #555;
+        }
+
+        .server a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .server a:hover {
+            text-decoration: underline;
+        }
+
+        .server-images {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .server-images img {
+            height: 280px;
+            border-radius: 8px;
+        }
+
+        .recommended-client {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .recommended-client a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .recommended-client a:hover {
+            background-color: #0c0c0c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="download.png" alt="Download Image">
+        <h1>Survival SMP</h1>
+    </header>
+
+    <section>
+        <div class="server">
+            <h2>Eaglercraft 1.5.2 server</h2>
+            <p>Join our Eaglercraft Survival SMP server:</p>
+            <p>IP: <a href="#" onclick="copyToClipboard('wss://57qnmp-25565.csb.app/')"> wss://57qnmp-25565.csb.app/</a></p>
+        </div>
+
+        <div class="server">
+            <h2>Minecraft 1.5.2 server</h2>
+            <p>Join our real Minecraft Survival SMP server:</p>
+            <p>IP: <a href="#" onclick="copyToClipboard('uk-01.contabo.one:25112')">uk-01.contabo.one:25112</a></p>
+        </div>
+    </section>
+
+    <section>
+        <div class="server">
+            <h2>Discord</h2>
+            <p>Dont forget to join our discord server!</p>
+            <a href="https://discord.com/invite/Nj7zT5MVr4" target="_blank" rel="noopener noreferrer">Discord</a>
+        </div>
+    </section>
+    
+    <div class="server-images">
+        <img src="image1.png" alt="Server Image 1">
+        <img src="image2.png" alt="Server Image 2">
+        <img src="image3.png" alt="Server Image 3">
+    </div>
+
+    <section class="recommended-client">
+        <div class="server">
+            <h2>Play on our Recommended Client</h2>
+            <a href="https://digitalserpant.github.io/CoustomCraft/1.5.2/index.html">Max FPS Client</a>
+        </div>
+    </section>
+
+    <script>
+        function copyToClipboard(text) {
+            var textarea = document.createElement("textarea");
+            textarea.value = text;
+            document.body.appendChild(textarea);
+            textarea.select();
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            alert('IP copied to clipboard: ' + text);
+        }
+    </script>
+</body>
+</html>
